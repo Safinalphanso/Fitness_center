@@ -1,0 +1,73 @@
+.plans {
+    background: var(--second-bg-color);
+    padding: 50px 0;
+}
+
+.plans-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto)); /* Back to normal size */
+    gap: 1.3rem; /* Restore the larger gap */
+    margin-top: 4.2rem;
+}
+
+.box {
+    padding: 30px; /* Restore original padding */
+    height: 40rem; /* Restore the original height */
+    background: var(--third-bg-color);
+    border-radius: 28px;
+    box-shadow: 0 0 5px var(--main-color);
+    transition: all 0.5s ease;
+}
+
+.box h3 {
+    font-size: 35px; /* Back to original text size for plan names */
+    font-weight: 600;
+}
+
+.box h2 {
+    font-size: 43px; /* Restore the price text size */
+    font-weight: 700;
+}
+
+/* Highlight styling */
+.highlight {
+    color: #581845; /* Keep the highlight color */
+}
+
+.box ul li {
+    list-style: disc;
+    font-size: 1.7rem; /* Restore the feature text size */
+}
+
+.box:hover {
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px) scale(1.03);
+}
+
+/* Style the heading */
+.heading {
+    font-size: 4rem; /* Adjusted heading size */
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.heading::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: var(--main-color);
+    margin: 10px auto;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+}

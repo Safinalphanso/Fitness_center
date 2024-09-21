@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: -apple-system, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+:root {
+    --bg-color: #000000;
+    --second-bg-color: #000000;
+    --third-bg-color: #ffffff15;
+    --text-color: #fff;
+    --main-color: #581845;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 8% 2rem;
+}

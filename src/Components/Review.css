@@ -1,0 +1,41 @@
+.review {
+    background: var(--bg-color);
+}
+
+.review-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.review-box img {
+    width: 15rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.review-item {
+    background: var(--third-bg-color);
+    border-radius: 2rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-item:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(-5px) scale(1.03);
+}
+
+#star {
+    color: gold;
+    font-size: 2rem;
+}

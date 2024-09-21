@@ -1,0 +1,68 @@
+.services {
+    background: var(--second-bg-color);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns for the grid */
+    gap: 20px; /* Adjust gap between boxes */
+    margin: 0 20px; /* Add margin to the sides */
+    padding: 0 10px; /* Add padding to the sides */
+}
+
+.row {
+    background: var(--third-bg-color);
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Padding inside the boxes */
+    transition: transform 0.3s ease;
+    text-align: center;
+    overflow: hidden; /* Prevent overflow from images */
+}
+
+.row img {
+    width: 100%; /* Make image take full width of the box */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Space below images */
+}
+
+.row h4 {
+    font-size: 20px; /* Adjust heading size */
+    font-weight: 600;
+    margin: 5px 0; /* Space around heading */
+}
+
+.row p {
+    font-size: 14px; /* Adjust paragraph size */
+    color: #666;
+}
+
+.row:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .services-content {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-content {
+        grid-template-columns: 1fr; /* One column on small screens */
+    }
+}
